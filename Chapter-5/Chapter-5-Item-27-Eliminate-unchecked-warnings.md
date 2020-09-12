@@ -4,7 +4,7 @@
 
 When you program with generics, you will see many compiler warnings: unchecked cast warnings, unchecked method invocation warnings, unchecked parameterized vararg type warnings, and unchecked conversion warnings. The more experience you acquire with generics, the fewer warnings you’ll get, but don’t expect newly written code to compile cleanly.
 
-当你使用泛型编程时，你将看到许多编译器警告：unchecked 强制转换警告、unchecked 方法调用警告、unchecked 可变参数类型警告和 unchecked 自动转换警告。使用泛型获得的经验越多，得到的警告就越少，但是不要期望新编写的代码能够完全正确地编译。
+当你使用泛型编程时，你将看到许多编译器警告：unchecked 强制转换警告、unchecked 方法调用警告、unchecked 可变参数类型警告和 unchecked 自动转换警告。使用泛型的经验越丰富，遇到的警告就越少，但是不要期望新编写的代码能够完全正确地编译。
 
 Many unchecked warnings are easy to eliminate. For example, suppose you accidentally write this declaration:
 
@@ -25,7 +25,7 @@ Set<Lark> exaltation = new HashSet();
 found: HashSet
 ```
 
-You can then make the indicated（v. 表明；指出；显示；adj. 表明的；指示的） correction, causing the warning to disappear. Note that you don’t actually have to specify the type parameter, merely（adv. 仅仅，只不过；只是） to indicate（vt. 表明；指出；预示；象征） that it’s present with the diamond operator (<>), introduced in Java 7. The compiler will then infer the correct actual type parameter (in this case, Lark):
+You can then make the indicated correction, causing the warning to disappear. Note that you don’t actually have to specify the type parameter, merely to indicate that it’s present with the diamond operator (<>), introduced in Java 7. The compiler will then infer the correct actual type parameter (in this case, Lark):
 
 你可以在指定位置进行更正，使警告消失。注意，你实际上不必指定类型参数，只需给出由 Java 7 中引入的 diamond 操作符（<>）。然后编译器将推断出正确的实际类型参数（在本例中为 Lark）：
 
